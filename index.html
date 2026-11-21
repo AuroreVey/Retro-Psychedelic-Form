@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr-CA">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaires</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <h1>Formulaire "Sans Queue Ni Tête"</h1>
+    </header>
+    <main>
+        <form method="get" target="_blank">
+            <label for="fichier">Dépose un fichier. Pourquoi ? Mystère.</label>
+            <div class="selection-fichier">
+                <label for="fichier">Choisir un fichier quelconque.</label>
+                <input type="file" name="fichier" id="fichier" accept=".jpg,.jpeg,.png,.pdf" multiple required>
+            </div>
+
+            <label for="motDePasse">Entre un mot de passe ultra secret :</label>
+            <input type="password" id="motDePasse" name="motDePasse" placeholder="Même nous, on ne sait pas pourquoi..." minlength="8" maxlength="20" required>
+
+            <label for="recherche">Recherche quelque chose, n'importe quoi.</label>
+                <input type="search" name="recherche" id="recherche" placeholder="Le sens de la vie ?" minlength="5" maxlength="50">
+
+
+            <label for="telephone">Ton numéro ? Promis, on n'appelle pas.</label>
+                <input type="tel" id="telephone" name="telephone" placeholder="012-345-6789" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" maxlength="12" inputmode="numeric" required>
+
+            <div class="couleur-humeur">
+                <label for="couleur">De quelle couleur est ton humeur ?</label>
+                <input type="color" id="couleur" name="couleur" value="#11707D">
+            </div>
+
+            <div class="boutons">
+            <button type="submit">Envoyer dans le vide</button>
+            <button type="reset">Tout oublier</button>
+            </div>
+        </form>
+    </main>
+    <footer>
+        <p>Aurore Veyrine - <time datetime="2026-11-20">20/11/2026</time></p>
+    </footer>
+</body>
+</html>
