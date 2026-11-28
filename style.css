@@ -189,3 +189,25 @@ button:hover, button:active, button:focus {
     display: flex;
     flex-direction: column;
 }
+
+/*VALIDATIONS*/
+input[type="search"]:focus:invalid,
+input[type="password"]:focus:invalid {
+    border: 2px solid #C0392B;
+    background-color: #FFE4E4;
+    box-shadow: 3px 3px 0 #C0392B;
+}
+
+.message-erreur {
+    color: #C0392B;
+    font-size: 0.8em;
+    margin: 0;
+}
+
+#erreurTelephone {
+    min-height: 25px;
+}
+
+#telephone {
+    margin-bottom: 0;
+}
